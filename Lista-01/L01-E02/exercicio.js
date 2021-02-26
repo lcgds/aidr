@@ -1,7 +1,7 @@
 "use strict";
 exports.__esModule = true;
-console.log('Exercício 2) Faça um algoritmo que leia as 3 notas de um aluno e calcule a média final ponderada deste aluno. Considerar o peso das notas como 2, 3 e 5, respectivamente');
 var rs = require("readline-sync");
+console.log('Exercício 2) Faça um algoritmo que leia as 3 notas de um aluno e calcule a média final ponderada deste aluno. Considerar o peso das notas como 2, 3 e 5, respectivamente');
 var nota1 = Number(rs.question('Digite a primeira nota: '));
 var nota2 = Number(rs.question('Digite a segunda nota: '));
 var nota3 = Number(rs.question('Digite a terceira nota: '));

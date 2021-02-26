@@ -1,6 +1,6 @@
-console.log('Exercício 3) Elabore um programa capaz de ler a base e a altura de um triângulo para, em seguida, escrever a sua área.');
-
 import * as rs from 'readline-sync';
+
+console.log('Exercício 3) Elabore um programa capaz de ler a base e a altura de um triângulo para, em seguida, escrever a sua área.');
 
 let b: number = Number(rs.question('Digite o valor da base do triângulo: '));
 

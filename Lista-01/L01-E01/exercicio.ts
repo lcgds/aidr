@@ -1,6 +1,6 @@
-console.log('Exercício 1) Implemente um algoritmo que leia três números e imprima na tela o produto (multiplicação) dos três números.');
-
 import * as rs from 'readline-sync';
+
+console.log('Exercício 1) Implemente um algoritmo que leia três números e imprima na tela o produto (multiplicação) dos três números.');
 
 let number1: number = Number(rs.question('Digite o primeiro número: '));
 
