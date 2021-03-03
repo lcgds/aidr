@@ -1,5 +1,5 @@
 /*
-    Escreva um programa TypeScriptque exiba os números pares de 2 a 12 utilizando laços de repetição
+    Escreva um programa TypeScript que exiba os números pares de 2 a 12 utilizando laços de repetição.
 */
 
 for (let contador: number = 2; contador <= 12; contador++) {
