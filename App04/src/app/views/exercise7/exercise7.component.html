@@ -1,0 +1,21 @@
+<!--<p>exercise7 works!</p>-->
+
+<h2>Exercício 7</h2>
+<p>Crie três botões e 3 divs. Ao serem clicados, os botões devem controlar quais classes cada div possui, alternando
+  entre classes em que uma div está visível e as outras duas estão invisíveis, para cada uma das divs (alternando entre
+  divs 1, 2 e 3)</p>
+
+<button (click)="trocarVisibilidade(1)">Div 1</button>
+<button (click)="trocarVisibilidade(2)">Div 2</button>
+<button (click)="trocarVisibilidade(3)">Div 3</button>
+
+<br>
+<br>
+
+<div id="div1" [class]="classDiv1">Div 1</div>
+
+<div id="div2" [class]="classDiv2">Div 2</div>
+
+<div id="div3" [class]="classDiv3">Div 3</div>
+
+<hr>

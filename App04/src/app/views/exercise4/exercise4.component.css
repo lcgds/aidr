@@ -1,0 +1,19 @@
+.animal {
+  width: 220px;
+  height: 220px;
+  overflow: hidden;
+  display: inline;
+  margin: 0 20px;
+}
+
+#bird {
+  border: 15px solid blue;
+}
+
+#cat {
+  border: 15px solid black;
+}
+
+#dog {
+  border: 15px solid burlywood;
+}

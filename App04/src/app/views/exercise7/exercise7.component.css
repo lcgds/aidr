@@ -1,0 +1,32 @@
+button, div {
+  margin: 0 10px;
+}
+
+div {
+  width: 75px;
+  height: 75px;
+  display: inline-block;
+  text-align: center;
+  color: white;
+}
+
+#div1 {
+  background-color: red;
+}
+
+#div2 {
+  background-color: purple;
+}
+
+#div3 {
+  background-color: seagreen;
+}
+
+.hidden {
+  color: transparent!important;
+  background-color: transparent!important;
+}
+
+.shown {
+  display: normal;
+}
