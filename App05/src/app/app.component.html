@@ -1,0 +1,17 @@
+<h1>Aula 05</h1>
+
+<button (click)="trocarVisibilidade('form')">Bindings</button>
+<button (click)="trocarVisibilidade('ex1')">Exercício 1</button>
+<button (click)="trocarVisibilidade('ex2')">Exercício 2</button>
+<button (click)="trocarVisibilidade('ex3')">Exercício 3</button>
+<button (click)="trocarVisibilidade('ex4')">Exercício 4</button>
+<button (click)="trocarVisibilidade('diret')">Diretivas Estruturais</button>
+
+<hr>
+
+<app-formulario *ngIf="exibir==='form'"></app-formulario>
+<app-exercicio1 *ngIf="exibir==='ex1'"></app-exercicio1>
+<app-exercicio2 *ngIf="exibir==='ex2'"></app-exercicio2>
+<app-exercicio3 *ngIf="exibir==='ex3'"></app-exercicio3>
+<app-exercicio4 *ngIf="exibir==='ex4'"></app-exercicio4>
+<app-diretivas *ngIf="exibir==='diret'"></app-diretivas>

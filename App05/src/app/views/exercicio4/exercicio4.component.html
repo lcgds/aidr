@@ -1,0 +1,28 @@
+<!--<p>exercicio4 works!</p>-->
+
+<h3>Exercício 4</h3>
+<p>Crie 3 caixas de texto e rádios contendo as operações básicas. Quando valores forem digitados nas caixas de texto, a operação selecionada deve ser realizada e o resultado exibido na 3ª caixa.</p>
+
+<p>Operação</p>
+
+<input type="radio" [(ngModel)]="operacao" (ngModelChange)="calcula()" name="operacao" value="+">
+<label for="+">Adição</label>
+
+<input type="radio" [(ngModel)]="operacao" (ngModelChange)="calcula()" name="operacao" value="/">
+<label for="/">Divisão</label>
+
+<input type="radio" [(ngModel)]="operacao" (ngModelChange)="calcula()" name="operacao" value="*">
+<label for="*">Multiplicação</label>
+
+<input type="radio" [(ngModel)]="operacao" (ngModelChange)="calcula()" name="operaco" value="-">
+<label for="*">Subtração</label>
+
+<br><br>
+
+<input type="text" [(ngModel)]="v1" placeholder="1º valor">
+<br>
+
+<input type="text" [(ngModel)]="v2" placeholder="2º valor">
+<br>
+
+<input type="text" placeholder="Resultado: {{ resultado }}" disabled>

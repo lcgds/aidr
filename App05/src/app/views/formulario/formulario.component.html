@@ -1,0 +1,55 @@
+<!--<p>formulario works!</p>-->
+
+<h2>Binding de duas vias em Text</h2>
+
+<input type="text" [(ngModel)]="nome">
+
+<p>Nome: {{ nome }} </p>
+
+<button (click)="limpar()">Limpar</button>
+
+<hr>
+
+<h2>Binding de duas vias em Selects</h2>
+<select [(ngModel)]="cidade">
+  <option value="São Paulo">São Paulo</option>
+  <option value="Santos">Santos</option>
+  <option value="Campinas">Campina</option>
+  <option value="Sorocaba">Sorocaba</option>
+</select>
+
+<p>Cidade selecionada: {{cidade}}</p>
+
+<hr>
+
+<h2>Binding de duas vias em Checkboxes</h2>
+
+<span>Preferência de contato:</span>
+
+<input type="checkbox" id="email" [(ngModel)]="prefEmail">
+<label for="email">E-mail</label>
+
+<input type="checkbox" id="telefone" [(ngModel)]="prefTel">
+<label for="telefone">Telefone</label>
+
+<p>E-mail: {{ prefEmail }}</p>
+<p>Telefone: {{ prefTel }}</p>
+
+<hr>
+
+<h2>Binding de duas vias em Radios</h2>
+
+<span>Gênero</span>
+
+<input type="radio" id="feminino" value="Feminino" [(ngModel)]="genero">
+<label for="feminino">Feminino</label>
+
+<input type="radio" id="masculino" value="Masculino" [(ngModel)]="genero">
+<label for="masculino">Masculino</label>
+
+<input type="radio" id="outros" value="Outros" [(ngModel)]="genero">
+<label for="outros">Outros</label>
+
+<p>Gênero: {{ genero }}</p>
+
+<hr>

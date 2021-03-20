@@ -1,0 +1,17 @@
+<!--<p>exercicio3 works!</p>-->
+
+<h3>Exercício 3</h3>
+<p>Crie um selectcontendo alguns cursos do Senac e uma caixa de texto (nome). Quando for selecionado um curso e texto for digitado, informações na parte inferior devem ser atualizadas, exibindo o curso selecionado e o nome do candidato.</p>
+
+<input type="text" [(ngModel)]="nome" placeholder="Nome">
+
+<br><br>
+
+<select [(ngModel)]="curso">
+    <option value="ADS">Análise e Desenvolvimento de Sistemas</option>
+    <option value="GTI">Gestão da Tecnologia da Informação</option>
+    <option value="TSI" selected>Tecnologia em Sistemas para Internet</option>
+</select>
+
+
+<p>O aluno {{nome}} está matrículado no curso de {{curso}}.</p>
