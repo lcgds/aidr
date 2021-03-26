@@ -1,0 +1,11 @@
+div {
+    margin: 1rem 1.5rem;
+    padding: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif!important;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+div h3 {
+    color: #1da1f2;
+}

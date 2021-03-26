@@ -1,0 +1,14 @@
+<!--<p>ex0102 works!</p>-->
+
+<h2>Exercícios 1 e 2</h2>
+<p>Crie uma caixa de texto para entrada de números. Quando um número positivo for digitado, exiba a frase “número positivo” abaixo da caixa de texto.</p>
+<p>Modifique o exercício anterior para que sejam exibidas as frases “número positivo”, “número negativo” ou “zero” abaixo da caixa de texto, de acordo com as entradas do usuário.
+</p>
+
+<input type="number" [(ngModel)]='numero'>
+
+<p *ngIf="numero > 0">O número acima é positivo!</p>
+
+<p *ngIf="numero < 0">O número acima é negativo!</p>
+
+<p *ngIf="numero === 0">O número acima é zero!</p>

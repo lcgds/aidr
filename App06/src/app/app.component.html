@@ -1,0 +1,41 @@
+<button (click)="alterSubject('ngIf')">ngIf</button>
+<button (click)="alterSubject('ngFor')">ngFor</button>
+
+<div *ngIf="subject === 'ngIf'">
+    <h1>*ngIf</h1>
+    
+    <select [(ngModel)]="point">
+        <option value="ex0102">Exercícios 01 e 02</option>
+        <option value="ex03">Exercício 3</option>
+        <option value="ex04">Exercício 4</option>
+    </select>
+
+    <div [ngSwitch]="point">
+        <app-ex0102 *ngSwitchCase="'ex0102'"></app-ex0102>
+        <app-ex03 *ngSwitchCase="'ex03'"></app-ex03>
+        <app-ex04 *ngSwitchCase="'ex04'"></app-ex04>
+    </div>
+</div>
+
+<div *ngIf="subject === 'ngFor'">
+    <h1>*ngFor</h1>
+
+    <select [(ngModel)]="point">
+        <option value="ng-for">Exemplos</option>
+        <option value="ex01">Exercício 1</option>
+        <option value="ex02">Exercício 2</option>
+        <option value="ex03">Exercício 3</option>
+        <option value="ex04">Exercício 4</option>
+    </select>
+
+    <div [ngSwitch]="point">
+        <app-ng-for *ngSwitchCase="'ng-for'"></app-ng-for>
+        <app-ng-for-ex01 *ngSwitchCase="'ex01'"></app-ng-for-ex01>
+        <app-ng-for-ex02 *ngSwitchCase="'ex02'"></app-ng-for-ex02>
+        <app-ng-for-ex03 *ngSwitchCase="'ex03'"></app-ng-for-ex03>
+        <app-ng-for-ex04 *ngSwitchCase="'ex04'"></app-ng-for-ex04>
+
+
+    </div>
+</div>
+

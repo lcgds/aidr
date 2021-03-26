@@ -1,0 +1,22 @@
+<!--<p>ng-for works!</p>-->
+
+<h1>Exemplos ngFor</h1>
+
+<h2>Estados que quero visitar:</h2>
+<ul>
+    <li *ngFor="let estado of estados">
+        {{estado}}
+    </li>
+</ul>
+
+<h2>Jogos que joguei em 2020</h2>
+<table>
+    <tr>
+        <td>Jogo</td>
+        <td>Nota</td>
+    </tr>
+    <tr *ngFor="let jogo of jogos; let i = index">
+        <td>{{jogo}}</td>
+        <td>{{notas[i]}}</td>
+    </tr>
+</table>

@@ -1,0 +1,8 @@
+<!--<p>ng-for-ex01 works!</p>-->
+
+<h2>Exerício 1</h2>
+<p>Itere por um vetor contendo um arrayde nomes de imagens, exibindo cada imagem de forma sequencial. Quando clicada, uma imagem deve exibir seu nome num alerta.</p>
+
+<div *ngFor="let imagem of imagens; let i = index">
+    <img (click)="nomear(i)" src="{{imagem}}">
+</div>

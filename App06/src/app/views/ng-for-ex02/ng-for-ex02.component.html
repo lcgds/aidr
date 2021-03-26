@@ -1,0 +1,11 @@
+<!--<p>ng-for-ex02 works!</p>-->
+
+<h2>Exerício 2</h2>
+<p>Crie um arraycontendo 4 países do mundo. Mostre o arrayem formato de lista na página. Quando um país for clicado, mostre um alertcontendo sua capital.</p>
+
+<h3>Países que quero visitar:</h3>
+<ol>
+    <li *ngFor="let country of countries; let i = index" (click)="getCapital(i)" >
+        {{country}}
+    </li>
+</ol>

@@ -1,0 +1,19 @@
+<!--<p>ex04 works!</p>-->
+
+<h2>Exercício 4</h2>
+<p>Crie uma calculadora, utilizando dois campos de texto e 4 botões (+, -, * e /). Quando clicados, os botões deverão realizar as operações matemáticas adequadas e exibir o resultado em texto, na parte inferior. Apenas exiba os botões e o resultado se houver números válidos nos campos de texto.</p>
+
+<input type="number" [(ngModel)]="n1">
+
+<input type="number" [(ngModel)]="n2">
+
+<br><br>
+
+<div>
+    <button (click)="calcular('/')">/</button>
+    <button (click)="calcular('*')">*</button>
+    <button (click)="calcular('-')">-</button>
+    <button (click)="calcular('+')">+</button>    
+</div>
+
+<p *ngIf="re != 0">Resultado: {{re}}</p>

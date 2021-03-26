@@ -1,0 +1,13 @@
+<!--<p>ex03 works!</p>-->
+
+<h2>Exercício 3</h2>
+<p>Crie um selectque permita selecionar o tipo de contato preferencial do usuário (Whatsappou email). Cada tipo de contato deverá exibir um campo de texto específico, que permita ao usuário digitar seu valor adequadamente.</p>
+
+<select [(ngModel)]="tipoContato">
+    <option label="E-mail" value="email"></option>
+    <option label="WhatsApp" value="wa"></option>
+</select>
+
+<input *ngIf="tipoContato == 'email'" type="email" placeholder="E-mail" [(ngModel)]="email">
+
+<input *ngIf="tipoContato == 'wa'" type="tel" placeholder="WhatsApp" [(ngModel)]="wa">
