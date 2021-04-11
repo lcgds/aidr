@@ -1,10 +1,15 @@
 <!--<p>ng-for-ex03 works!</p>-->
 
 <h2>Exercício 3</h2>
-<p>Crie o template de uma div contendo o título do post e seu conteúdo. Faça um array de títulos e um array de posts contendo 3 elementos cada. Faça com que os posts e títulos sejam exibidos na tela.</p>
+<p>Crie o template de uma div contendo o título do post e seu conteúdo. Faça um array de títulos e um array de posts
+  contendo 3 elementos cada. Faça com que os posts e títulos sejam exibidos na tela.</p>
 
 <div *ngFor="let post of posts; let i = index">
-    <small>Tweet #{{i+1}}</small>
-    <h3>{{titles[i]}}</h3>
-    <p>{{post}}</p>
+
+  <small>Tweet #{{ i+1 }}</small>
+
+  <h3>{{ titles[i] }}</h3>
+
+  <p>{{ post }}</p>
+
 </div>

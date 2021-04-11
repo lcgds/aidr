@@ -1,0 +1,24 @@
+<!--<p>movie works!</p>-->
+
+<h2>My IMDB</h2>
+
+<ul>
+  <li *ngFor="let movie of movies; let i = index" (click)="readMovie(movie)">
+    {{ movie.name }} - {{ movie.rating }}/5 <button (click)="deleteMovie(i)">Delete</button>
+  </li>
+</ul>
+
+<button (click)="createMovie()">Insert movie</button>
+
+<p *ngIf="selectedMovie">
+  <label for="name">Movie Name</label>
+  <br>
+  <input type="text" name="name" [(ngModel)]="selectedMovie.name">
+
+  <br>
+  <br>
+
+  <label for="rating">Movie Rating</label>
+  <br>
+  <input type="number" min="1" max="5" name="rating" [(ngModel)]="selectedMovie.rating">
+</p>
