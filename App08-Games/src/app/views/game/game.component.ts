@@ -25,6 +25,7 @@ export class GameComponent implements OnInit {
 
   newGame(): void {
     this.selectedGame = new Game('');
+    this.editMode = false;
   }
 
   editGame(game: Game): void {

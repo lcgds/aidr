@@ -1,0 +1,17 @@
+<h2>Consulta de CEP</h2>
+
+<input type="text" name="cep" id="cep" title="cep" placeholder="00000-000" [(ngModel)]="cep">
+
+<button (click)="consultar()">Consultar</button>
+
+<div *ngIf="endereco">
+  <p>{{ endereco.cep }}</p>
+  <p>{{ endereco.logradouro }}</p>
+  <p>{{ endereco.complemento }}</p>
+  <p>{{ endereco.bairro }}</p>
+  <p>{{ endereco.localidade }}</p>
+  <p>{{ endereco.uf }}</p>
+  <p>{{ endereco.gia }}</p>
+  <p>{{ endereco.ddd }}</p>
+  <p>{{ endereco.siafi }}</p>
+</div>

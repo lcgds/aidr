@@ -1,21 +1,23 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { GameComponent } from './views/game/game.component';
-import { AboutComponent } from './about/about.component';
+import { EnderecoComponent } from './view/endereco/endereco.component';
+import { FormsModule } from '@angular/forms';
+import { ClienteComponent } from './view/cliente/cliente.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GameComponent,
-    AboutComponent
+    EnderecoComponent,
+    ClienteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     FormsModule
   ],
   providers: [],

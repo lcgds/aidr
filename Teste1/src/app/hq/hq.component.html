@@ -1,0 +1,49 @@
+<h1>Minhas HQs</h1>
+
+<table>
+    <thead>
+        <tr>
+            <td>ID</td>
+            <td>Nome</td>
+            <td>Autor</td>
+            <td>Editora</td>
+            <td>Idioma</td>
+            <td>Opção</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let hq of hqs; index as i">
+            <td>{{ hq.id }}</td>
+            <td>{{ hq.name }}</td>
+            <td>{{ hq.author }}</td>
+            <td>{{ hq.publisher }}</td>
+            <td>{{ hq.language }}</td>            
+            <td>
+                <button (click)="editHq(hq)">Editar</button>
+                <button (click)="removeHq(hq.id)">Remover</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+
+<div *ngIf="selectedHq">
+    <hr>
+
+    <input type="number" placeholder="Id" [(ngModel)]="selectedHq.id" disabled><br>
+    <input type="text" placeholder="Nome" [(ngModel)]="selectedHq.name"><br>
+    <input type="text" placeholder="Autor" [(ngModel)]="selectedHq.author"><br>
+    <input type="text" placeholder="Editora" [(ngModel)]="selectedHq.publisher"><br>
+    <input type="text" placeholder="Idioma" [(ngModel)]="selectedHq.language"><br>
+    
+    <br>
+
+    <button (click)="saveHq()">Salvar HQ</button><br>
+
+    <hr>
+</div>
+
+<div *ngIf="editMode === false && createMode === false">
+    <button (click)="newHq()">Cadastrar HQ</button>
+</div>
