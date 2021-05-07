@@ -1,7 +1,19 @@
-<h2>Cliente</h2>
+<h2>Clientes</h2>
 
-<ul *ngFor="let cliente of clientes">
-    <li>
-        {{ cliente.cpf }} - {{ cliente.nome }}
+<ul class="model-list">
+    <li *ngFor="let cliente of clientes" >
+        <span (click)="update(cliente);">{{ cliente.cpf }} - {{ cliente.nome }}</span>
+        <span class="del" (click)="destroy(cliente.id);">x</span>
     </li>
 </ul>
+
+<form *ngIf="cliente">
+    <input name="nome" placeholder="Nome" type="text" [(ngModel)]="cliente.nome" autofocus>
+
+    <input name="cpf" placeholder="CPF" type="text" [(ngModel)]="cliente.cpf">
+
+    <button (click)="save();">Salvar</button>
+    <button (click)="cancelEdit();">Cancelar</button>
+</form>
+
+<button *ngIf="editMode===false" (click)="create();">Novo</button>

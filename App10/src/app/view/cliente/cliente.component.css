@@ -1,0 +1,46 @@
+.model-list {
+    list-style: none;
+    width: 250px;
+}
+
+.model-list li {
+    background-color: #f5f5f5;
+    color: #212121;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+button {
+    text-transform: uppercase;
+    background-color: #2196f3;
+    color: #fafafa;
+    padding: 7.5px 15px;
+    border-radius: 15px;
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    transition: 0.25s;
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+}
+
+.del {
+    float: right;
+    text-align: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 15px;
+    background-color: #e53935;
+    color: #fafafa;
+    margin-right: -48px;
+}
+
+input {
+    display: block;
+    margin: 24px;
+    padding: 6px;
+    font-size: 14px;
+}
